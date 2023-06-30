@@ -19,6 +19,7 @@ function game(level) {
         board.removeChild(board.lastChild);
     }
     points.textContent = points.textContent.substring(0, points.textContent.indexOf(" ")+1) + (level).toString();
+    time.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
     let id = setInterval(function() {
         timeNum++;
         time.style.width = `${timeNum}%`;

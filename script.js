@@ -7,7 +7,7 @@ function game(level) {
     let g = Math.floor(Math.random() * 256);
     let b = Math.floor(Math.random() * 256);
     let chosen = Math.floor(Math.random() * (3 + Math.floor(level / 10)) * (3 + Math.floor(level / 10)));
-    let different = Math.min(r, g, b, 40 - Math.floor(level / 5));
+    let different = Math.min(r, g, b, 40 - Math.floor(level / 4));
     let timeNum = 0;
 
     let points = document.querySelector(".points");
